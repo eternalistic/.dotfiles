@@ -1,12 +1,12 @@
 [user]
-  name = Kyle Shevlin
-  email = kyle.a.shevlin@gmail.com
+  name = Jeremy Caldwell
+  email = jeremy@eternalistic.net
 
 [github]
-  user = "kyleshevlin"
+  user = "eternalistic"
 
 [core]
-  editor = "vim"
+  editor = "vscode"
   excludesfile = ~/.gitignore_global
 
 [color]
