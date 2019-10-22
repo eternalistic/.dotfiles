@@ -56,3 +56,12 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Launch VSCode in teaching mode
 alias teach="code --extensions-dir ~/code_profiles/egghead/exts --user-data-dir ~/code_profiles/egghead/data"
+
+# Lando shortcuts.
+alias lando:pull-db-dev='lando pull --code=none --database=dev --files=none && lando drush en stage_file_proxy -y'
+alias lando:pull-db-staging='lando pull --code=none --database=staging --files=none && lando drush en stage_file_proxy -y'
+alias lando:pull-db-live='lando pull --code=none --database=live --files=none && lando drush en stage_file_proxy -y'
+alias lando:pull-files-dev='lando pull --code=none --database=none --files=dev'
+alias lando:pull-files-staging='lando pull --code=none --database=none --files=staging'
+alias lando:pull-files-live='lando pull --code=none --database=none --files=live'
+alias lando:localdev='lando drush en stage_file_proxy -y && lando drush variable-set theme_debug 1 && lando drush vset preprocess_js 0 -y && lando drush vset preprocess_css 0 -y && lando drush cc all'
